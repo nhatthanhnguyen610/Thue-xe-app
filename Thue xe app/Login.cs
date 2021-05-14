@@ -44,5 +44,19 @@ namespace Thue_xe_app
                 MessageBox.Show("lỗi kết nối");
             }
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult DR = MessageBox.Show("Bạn có chắc muốn thoát khỏi chương trình", "Cảnh báo", MessageBoxButtons.OKCancel);
+            if (DialogResult.OK == DR)
+            {
+                Application.Exit();
+            }
+            if (DialogResult.Cancel == DR)
+            {
+
+            }
+            
+        }
     }
 }

@@ -35,6 +35,7 @@ namespace Thue_xe_app
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -89,12 +90,23 @@ namespace Thue_xe_app
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(677, 397);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(111, 41);
+            this.btnThoat.TabIndex = 6;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // Login
             // 
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.label3);
@@ -118,5 +130,6 @@ namespace Thue_xe_app
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnThoat;
     }
 }
