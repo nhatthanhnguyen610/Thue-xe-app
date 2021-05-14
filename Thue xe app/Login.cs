@@ -19,7 +19,7 @@ namespace Thue_xe_app
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TVHPEVI;Initial Catalog=ThueXe;User ID=sa");
+            SqlConnection conn = new SqlConnection(@"Data Source=192.168.1.5,1433;Initial Catalog=ThueXe;User ID=sa;Password=123123");
             try
             {
                 conn.Open();
