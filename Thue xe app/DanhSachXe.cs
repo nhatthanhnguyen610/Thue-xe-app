@@ -124,7 +124,7 @@ namespace Thue_xe_app
 
         private void btnThueXe_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             ThueXe login = new ThueXe(danhSachXeModels[soThuTu]);
             login.Show();
         }

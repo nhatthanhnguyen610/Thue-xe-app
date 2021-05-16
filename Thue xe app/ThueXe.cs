@@ -17,12 +17,5 @@ namespace Thue_xe_app
         {
             InitializeComponent();
         }
-
-        private void btnVe_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            TrangChu trangChu = new TrangChu();
-            trangChu.Show();
-        }
     }
 }

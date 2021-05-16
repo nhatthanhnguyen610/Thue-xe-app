@@ -30,7 +30,6 @@ namespace Thue_xe_app
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnVe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,22 +42,11 @@ namespace Thue_xe_app
             this.label1.TabIndex = 0;
             this.label1.Text = "THUÊ XE";
             // 
-            // btnVe
-            // 
-            this.btnVe.Location = new System.Drawing.Point(664, 397);
-            this.btnVe.Name = "btnVe";
-            this.btnVe.Size = new System.Drawing.Size(124, 41);
-            this.btnVe.TabIndex = 2;
-            this.btnVe.Text = "Về trang chủ";
-            this.btnVe.UseVisualStyleBackColor = true;
-            this.btnVe.Click += new System.EventHandler(this.btnVe_Click);
-            // 
             // ThueXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnVe);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ThueXe";
@@ -72,6 +60,5 @@ namespace Thue_xe_app
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnVe;
     }
 }
