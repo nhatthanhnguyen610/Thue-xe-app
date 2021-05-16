@@ -68,19 +68,28 @@ namespace Thue_xe_app
 
         private void loadXe(int soThuTu)
         {
-            try
+            if (tongSoXe == 0)
             {
-                picXe.Image = Image.FromFile(danhSachXeModels[soThuTu].imageUrl);
+                lbMaXe.Text = lbTenXe.Text = lbBienSo.Text = "";
+                picXe.Image = Image.FromFile(@"C:\Users\DELL\source\repos\Thue xe app\Thue xe app\img\null.jpg");
+                btnThueXe.Enabled = false;
             }
-            catch (Exception ex)
+            else
             {
+                try
+                {
+                    picXe.Image = Image.FromFile(danhSachXeModels[soThuTu].imageUrl);
+                }
+                catch (Exception ex)
+                {
 
+                }
+                lbMaXe.Text = "Mã xe: " + danhSachXeModels[soThuTu].maXe.ToString();
+                lbTenXe.Text = "Tên xe: " + danhSachXeModels[soThuTu].tenXe;
+                lbBienSo.Text = "Biển số: " + danhSachXeModels[soThuTu].bienSo.ToString();
+                lbTrangThai.ForeColor = lbTrangThai.BackColor = !danhSachXeModels[soThuTu].trangThai ? Color.Green : Color.Red;
+                btnThueXe.Enabled = !danhSachXeModels[soThuTu].trangThai;
             }
-            lbMaXe.Text = "Mã xe: " + danhSachXeModels[soThuTu].maXe.ToString();
-            lbTenXe.Text = "Tên xe: " + danhSachXeModels[soThuTu].tenXe;
-            lbBienSo.Text = "Biển số: " + danhSachXeModels[soThuTu].bienSo.ToString();
-            lbTrangThai.ForeColor = lbTrangThai.BackColor = !danhSachXeModels[soThuTu].trangThai ? Color.Green : Color.Red;
-            btnThueXe.Enabled = !danhSachXeModels[soThuTu].trangThai;
         }
 
         private void btnVe_Click(object sender, EventArgs e)

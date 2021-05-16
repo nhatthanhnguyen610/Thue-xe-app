@@ -8,6 +8,9 @@ namespace Thue_xe_app.Model
 {
     public class DanhSachXeModel
     {
+        public DanhSachXeModel()
+        {
+        }
         public DanhSachXeModel(int maXe, int bienSo,string tenXe, string imageUrl, bool trangThai)
         {
             this.maXe = maXe;

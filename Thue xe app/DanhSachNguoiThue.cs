@@ -29,7 +29,7 @@ namespace Thue_xe_app
         void loadData()
         {
             command = connection.CreateCommand();
-            command.CommandText = "Select * from KhachHang";
+            command.CommandText = "Select * from KhachHang where trangThai <> 1";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
@@ -39,7 +39,7 @@ namespace Thue_xe_app
         public void loadDatabyKeyword()
         {
             command = connection.CreateCommand();
-            command.CommandText = "Select * from KhachHang where tenKh like '%" + txt_TimKiemNguoiThue.Text + "%'";
+            command.CommandText = "Select * from KhachHang where tenKh like '%" + txt_TimKiemNguoiThue.Text + "%'" + "and trangThai <> 1";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
@@ -91,7 +91,7 @@ namespace Thue_xe_app
         private void bt_Xoa_Click(object sender, EventArgs e)
         {
             command = connection.CreateCommand();
-            command.CommandText = "Delete from KhachHang where maKh= '" + idNguoiThue + "'";
+            command.CommandText = "Update KhachHang set trangThai= '" + 1 + "' where maKh='" + idNguoiThue + "'";
             command.ExecuteNonQuery();
             loadData();
         }

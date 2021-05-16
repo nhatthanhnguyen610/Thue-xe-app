@@ -122,6 +122,7 @@
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="img\null.jpg" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -136,11 +137,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="img\airblack1.jpg" />
-    <None Include="img\null.jpg" />
-    <Content Include="img\sirius1.jpg" />
-    <Content Include="img\wave1.jpg" />
+    <Content Include="img\1.png" />
+    <Content Include="img\11.png" />
+    <Content Include="img\12.png" />
+    <Content Include="img\13.png" />
+    <Content Include="img\14.png" />
+    <Content Include="img\15.png" />
+    <Content Include="img\16.png" />
+    <Content Include="img\2.png" />
+    <Content Include="img\3.png" />
+    <Content Include="img\4.png" />
+    <Content Include="img\5.png" />
+    <Content Include="img\6.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
