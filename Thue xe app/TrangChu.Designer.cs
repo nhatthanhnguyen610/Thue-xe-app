@@ -30,7 +30,6 @@ namespace Thue_xe_app
         private void InitializeComponent()
         {
             this.btnDangxuat = new System.Windows.Forms.Button();
-            this.btnThueXe = new System.Windows.Forms.Button();
             this.btnDanhSachXe = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnDanhSachNguoiThue = new System.Windows.Forms.Button();
@@ -48,19 +47,9 @@ namespace Thue_xe_app
             this.btnDangxuat.UseVisualStyleBackColor = true;
             this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
-            // btnThueXe
-            // 
-            this.btnThueXe.Location = new System.Drawing.Point(305, 56);
-            this.btnThueXe.Name = "btnThueXe";
-            this.btnThueXe.Size = new System.Drawing.Size(145, 45);
-            this.btnThueXe.TabIndex = 1;
-            this.btnThueXe.Text = "Thuê xe";
-            this.btnThueXe.UseVisualStyleBackColor = true;
-            this.btnThueXe.Click += new System.EventHandler(this.btnThueXe_Click);
-            // 
             // btnDanhSachXe
             // 
-            this.btnDanhSachXe.Location = new System.Drawing.Point(305, 138);
+            this.btnDanhSachXe.Location = new System.Drawing.Point(305, 46);
             this.btnDanhSachXe.Name = "btnDanhSachXe";
             this.btnDanhSachXe.Size = new System.Drawing.Size(145, 45);
             this.btnDanhSachXe.TabIndex = 2;
@@ -80,7 +69,7 @@ namespace Thue_xe_app
             // 
             // btnDanhSachNguoiThue
             // 
-            this.btnDanhSachNguoiThue.Location = new System.Drawing.Point(305, 219);
+            this.btnDanhSachNguoiThue.Location = new System.Drawing.Point(305, 149);
             this.btnDanhSachNguoiThue.Name = "btnDanhSachNguoiThue";
             this.btnDanhSachNguoiThue.Size = new System.Drawing.Size(145, 45);
             this.btnDanhSachNguoiThue.TabIndex = 4;
@@ -90,7 +79,7 @@ namespace Thue_xe_app
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(305, 294);
+            this.btnThanhToan.Location = new System.Drawing.Point(305, 255);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(145, 45);
             this.btnThanhToan.TabIndex = 5;
@@ -118,7 +107,6 @@ namespace Thue_xe_app
             this.Controls.Add(this.btnDanhSachNguoiThue);
             this.Controls.Add(this.btnThongKe);
             this.Controls.Add(this.btnDanhSachXe);
-            this.Controls.Add(this.btnThueXe);
             this.Controls.Add(this.btnDangxuat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "TrangChu";
@@ -131,7 +119,6 @@ namespace Thue_xe_app
         #endregion
 
         private System.Windows.Forms.Button btnDangxuat;
-        private System.Windows.Forms.Button btnThueXe;
         private System.Windows.Forms.Button btnDanhSachXe;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnDanhSachNguoiThue;

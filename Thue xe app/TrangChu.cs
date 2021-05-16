@@ -32,13 +32,6 @@ namespace Thue_xe_app
             }
         }
 
-        private void btnThueXe_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ThueXe thueXe = new ThueXe();
-            thueXe.Show();
-        }
-
         private void btnDanhSachXe_Click(object sender, EventArgs e)
         {
             this.Hide();
