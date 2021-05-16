@@ -44,8 +44,11 @@ namespace Thue_xe_app
             this.btnTrai = new System.Windows.Forms.Button();
             this.picXe = new System.Windows.Forms.PictureBox();
             this.groupHuongDan = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupXe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picXe)).BeginInit();
+            this.groupHuongDan.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -195,12 +198,36 @@ namespace Thue_xe_app
             // 
             // groupHuongDan
             // 
+            this.groupHuongDan.Controls.Add(this.label4);
+            this.groupHuongDan.Controls.Add(this.label3);
             this.groupHuongDan.Location = new System.Drawing.Point(620, 79);
             this.groupHuongDan.Name = "groupHuongDan";
             this.groupHuongDan.Size = new System.Drawing.Size(168, 312);
             this.groupHuongDan.TabIndex = 5;
             this.groupHuongDan.TabStop = false;
             this.groupHuongDan.Text = "Chú thích";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Green;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(6, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Khả dụng";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Red;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(6, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Đã cho thuê";
             // 
             // DanhSachXe
             // 
@@ -219,6 +246,8 @@ namespace Thue_xe_app
             this.groupXe.ResumeLayout(false);
             this.groupXe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picXe)).EndInit();
+            this.groupHuongDan.ResumeLayout(false);
+            this.groupHuongDan.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,5 +270,7 @@ namespace Thue_xe_app
         private System.Windows.Forms.Button btnTrai;
         private System.Windows.Forms.PictureBox picXe;
         private System.Windows.Forms.Button btnThueXe;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
