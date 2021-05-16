@@ -34,7 +34,7 @@ namespace Thue_xe_app
             table.Clear();
             adapter.Fill(table);
             dataGridViewNguoiThue.DataSource = table;
-            dataGridViewNguoiThue.Columns[5].Visible = false
+            dataGridViewNguoiThue.Columns[5].Visible = false;
         }
 
         public void loadDatabyKeyword()
