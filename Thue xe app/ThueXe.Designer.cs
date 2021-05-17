@@ -32,7 +32,7 @@ namespace Thue_xe_app
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboDv = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateBD = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.txtGia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@ namespace Thue_xe_app
             // 
             this.groupBox1.Controls.Add(this.comboDv);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dateBD);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtGia);
             this.groupBox1.Controls.Add(this.label3);
@@ -106,12 +106,12 @@ namespace Thue_xe_app
             this.label9.TabIndex = 23;
             this.label9.Text = "Ngày thuê:";
             // 
-            // dateTimePicker1
+            // dateBD
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(172, 52);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(256, 22);
-            this.dateTimePicker1.TabIndex = 22;
+            this.dateBD.Location = new System.Drawing.Point(172, 52);
+            this.dateBD.Name = "dateBD";
+            this.dateBD.Size = new System.Drawing.Size(256, 22);
+            this.dateBD.TabIndex = 22;
             // 
             // label10
             // 
@@ -198,6 +198,7 @@ namespace Thue_xe_app
             this.btnXacNhan.TabIndex = 8;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // txtDiaChi
             // 
@@ -297,7 +298,7 @@ namespace Thue_xe_app
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox comboDv;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateBD;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtGia;
         private System.Windows.Forms.Label label3;

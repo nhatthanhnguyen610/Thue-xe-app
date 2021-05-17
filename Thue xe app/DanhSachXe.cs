@@ -119,7 +119,7 @@ namespace Thue_xe_app
         {
             soThuTu--;
             if (soThuTu < 0)
-                soThuTu = tongSoXe;
+                soThuTu = tongSoXe-1;
             loadXe(soThuTu);
         }
 
@@ -135,7 +135,9 @@ namespace Thue_xe_app
         {
             
             ThueXe login = new ThueXe(danhSachXeModels[soThuTu]);
+            this.Hide();
             login.Show();
+            this.Close();
         }
     }
 }
