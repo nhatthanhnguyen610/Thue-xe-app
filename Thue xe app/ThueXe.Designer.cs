@@ -192,12 +192,13 @@ namespace Thue_xe_app
             // 
             // btnXacNhan
             // 
+            this.btnXacNhan.BackColor = System.Drawing.Color.Lime;
             this.btnXacNhan.Location = new System.Drawing.Point(550, 316);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(135, 46);
             this.btnXacNhan.TabIndex = 8;
             this.btnXacNhan.Text = "Xác nhận";
-            this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.UseVisualStyleBackColor = false;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // txtDiaChi
@@ -267,8 +268,10 @@ namespace Thue_xe_app
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(92, 15);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.GreenYellow;
+            this.label1.Location = new System.Drawing.Point(103, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(605, 32);
             this.label1.TabIndex = 0;
@@ -278,6 +281,7 @@ namespace Thue_xe_app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Thue_xe_app.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);

@@ -159,6 +159,11 @@
     <Content Include="img\4.png" />
     <Content Include="img\5.png" />
     <Content Include="img\6.png" />
+    <None Include="img\menu4.png" />
+    <None Include="img\menu3.png" />
+    <None Include="img\menu2.png" />
+    <None Include="img\menu1.png" />
+    <None Include="img\bg.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

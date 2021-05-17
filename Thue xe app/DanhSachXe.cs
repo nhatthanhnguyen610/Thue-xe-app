@@ -78,6 +78,7 @@ namespace Thue_xe_app
             {
                 try
                 {
+                    //picXe.Image = Image.FromFile(@"~/img/1.png");
                     picXe.Image = Image.FromFile(danhSachXeModels[soThuTu].imageUrl);
                 }
                 catch (Exception ex)

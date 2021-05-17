@@ -99,8 +99,10 @@ namespace Thue_xe_app
             i = dataGridView_ThanhToan.CurrentCell.ColumnIndex;
             if (i == 5)
             {
+                this.Hide();
                 HoaDon hoaDon = new HoaDon(MaHd);
                 hoaDon.Show();
+                this.Close();
             }
         }
 

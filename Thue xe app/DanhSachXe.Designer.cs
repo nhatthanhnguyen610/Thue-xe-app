@@ -44,8 +44,8 @@ namespace Thue_xe_app
             this.btnTrai = new System.Windows.Forms.Button();
             this.picXe = new System.Windows.Forms.PictureBox();
             this.groupHuongDan = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupXe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picXe)).BeginInit();
             this.groupHuongDan.SuspendLayout();
@@ -54,7 +54,9 @@ namespace Thue_xe_app
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.GreenYellow;
             this.label1.Location = new System.Drawing.Point(204, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(397, 55);
@@ -63,12 +65,13 @@ namespace Thue_xe_app
             // 
             // btnVe
             // 
+            this.btnVe.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnVe.Location = new System.Drawing.Point(664, 397);
             this.btnVe.Name = "btnVe";
             this.btnVe.Size = new System.Drawing.Size(124, 41);
             this.btnVe.TabIndex = 3;
             this.btnVe.Text = "Về trang chủ";
-            this.btnVe.UseVisualStyleBackColor = true;
+            this.btnVe.UseVisualStyleBackColor = false;
             this.btnVe.Click += new System.EventHandler(this.btnVe_Click);
             // 
             // groupXe
@@ -93,12 +96,13 @@ namespace Thue_xe_app
             // 
             // btnThueXe
             // 
+            this.btnThueXe.BackColor = System.Drawing.Color.Lime;
             this.btnThueXe.Location = new System.Drawing.Point(289, 299);
             this.btnThueXe.Name = "btnThueXe";
             this.btnThueXe.Size = new System.Drawing.Size(290, 40);
             this.btnThueXe.TabIndex = 10;
             this.btnThueXe.Text = "Thuê xe";
-            this.btnThueXe.UseVisualStyleBackColor = true;
+            this.btnThueXe.UseVisualStyleBackColor = false;
             this.btnThueXe.Click += new System.EventHandler(this.btnThueXe_Click);
             // 
             // lbTrangThai
@@ -149,12 +153,13 @@ namespace Thue_xe_app
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(504, 22);
+            this.btnTimKiem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTimKiem.Location = new System.Drawing.Point(504, 18);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
+            this.btnTimKiem.Size = new System.Drawing.Size(75, 28);
             this.btnTimKiem.TabIndex = 4;
             this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
@@ -166,22 +171,24 @@ namespace Thue_xe_app
             // 
             // btnPhai
             // 
+            this.btnPhai.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnPhai.Location = new System.Drawing.Point(203, 281);
             this.btnPhai.Name = "btnPhai";
             this.btnPhai.Size = new System.Drawing.Size(58, 58);
             this.btnPhai.TabIndex = 2;
             this.btnPhai.Text = ">";
-            this.btnPhai.UseVisualStyleBackColor = true;
+            this.btnPhai.UseVisualStyleBackColor = false;
             this.btnPhai.Click += new System.EventHandler(this.btnPhai_Click);
             // 
             // btnTrai
             // 
+            this.btnTrai.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnTrai.Location = new System.Drawing.Point(7, 281);
             this.btnTrai.Name = "btnTrai";
             this.btnTrai.Size = new System.Drawing.Size(58, 58);
             this.btnTrai.TabIndex = 1;
             this.btnTrai.Text = "<";
-            this.btnTrai.UseVisualStyleBackColor = true;
+            this.btnTrai.UseVisualStyleBackColor = false;
             this.btnTrai.Click += new System.EventHandler(this.btnTrai_Click);
             // 
             // picXe
@@ -207,32 +214,35 @@ namespace Thue_xe_app
             this.groupHuongDan.TabStop = false;
             this.groupHuongDan.Text = "Chú thích";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Green;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(6, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Khả dụng";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Red;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(6, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 17);
+            this.label4.Size = new System.Drawing.Size(128, 25);
             this.label4.TabIndex = 1;
             this.label4.Text = "Đã cho thuê";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Green;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(6, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Khả dụng";
             // 
             // DanhSachXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Thue_xe_app.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupHuongDan);
             this.Controls.Add(this.groupXe);

@@ -82,15 +82,14 @@ namespace Thue_xe_app
             int thoiGian = int.Parse(txt_ThoiGianSuDung.Text);
             tong = gia * thoiGian;
             txt_TongTien.Text = String.Format(new CultureInfo("en-US"), "{0:c}", gia * thoiGian);
-
-
-
-
         }
 
         private void bt_Cancel_Click(object sender, EventArgs e)
         {
             this.Hide();
+            ThanhToan thanhToan = new ThanhToan();
+            thanhToan.Show();
+            this.Close();
         }
 
         private void bt_OK_Click(object sender, EventArgs e)
@@ -98,6 +97,9 @@ namespace Thue_xe_app
             addThanhToan();
             update();
             this.Hide();
+            ThanhToan thanhToan = new ThanhToan();
+            thanhToan.Show();
+            this.Close();
         }
 
         public void addThanhToan()
@@ -108,9 +110,16 @@ namespace Thue_xe_app
         }
         public void update()
         {
-            command = connection.CreateCommand();
-            command.CommandText = "update HopDong set trangThai='" + 1 + "' where maHd='" + maHd + "'";
-            command.ExecuteNonQuery();
+            try
+            {
+                command = connection.CreateCommand();
+                command.CommandText = "update HopDong set trangThai = 1 where maHd= '" + maHd + "'";
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Xuất hóa đơn thất bại");
+            }
         }
     }
 }
