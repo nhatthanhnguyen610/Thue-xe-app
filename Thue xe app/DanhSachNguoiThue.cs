@@ -29,7 +29,7 @@ namespace Thue_xe_app
         void loadData()
         {
             command = connection.CreateCommand();
-            command.CommandText = "Select * from KhachHang where trangThai <> 1";
+            command.CommandText = "Select * from KhachHang where trangThai = 0";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
@@ -40,7 +40,7 @@ namespace Thue_xe_app
         public void loadDatabyKeyword()
         {
             command = connection.CreateCommand();
-            command.CommandText = "Select * from KhachHang where tenKh like '%" + txt_TimKiemNguoiThue.Text + "%'" + "and trangThai <> 1";
+            command.CommandText = "Select * from KhachHang where tenKh like '%" + txt_TimKiemNguoiThue.Text + "%'" + "and trangThai = 0";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);

@@ -30,7 +30,7 @@ namespace Thue_xe_app
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboDv = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@ namespace Thue_xe_app
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboDv);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label10);
@@ -85,16 +85,17 @@ namespace Thue_xe_app
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thuê xe";
             // 
-            // comboBox1
+            // comboDv
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboDv.FormattingEnabled = true;
+            this.comboDv.Items.AddRange(new object[] {
             "Ngắn hạn (dưới 10 ngày)",
             "Dài hạn (trên 10 ngày)"});
-            this.comboBox1.Location = new System.Drawing.Point(172, 343);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(256, 24);
-            this.comboBox1.TabIndex = 24;
+            this.comboDv.Location = new System.Drawing.Point(172, 343);
+            this.comboDv.Name = "comboDv";
+            this.comboDv.Size = new System.Drawing.Size(256, 24);
+            this.comboDv.TabIndex = 24;
+            this.comboDv.SelectedIndexChanged += new System.EventHandler(this.comboDv_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -294,7 +295,7 @@ namespace Thue_xe_app
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboDv;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label10;
