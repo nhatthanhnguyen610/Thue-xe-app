@@ -148,7 +148,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\1.png" />
+    <None Include="img\10.png" />
+    <None Include="img\101.png" />
     <Content Include="img\11.png" />
+    <None Include="img\111.png" />
     <Content Include="img\12.png" />
     <Content Include="img\13.png" />
     <Content Include="img\14.png" />
@@ -159,6 +162,9 @@
     <Content Include="img\4.png" />
     <Content Include="img\5.png" />
     <Content Include="img\6.png" />
+    <None Include="img\9.png" />
+    <None Include="img\8.png" />
+    <None Include="img\7.png" />
     <None Include="img\menu4.png" />
     <None Include="img\menu3.png" />
     <None Include="img\menu2.png" />
