@@ -44,6 +44,10 @@ namespace Thue_xe_app
             {
                 MessageBox.Show("lỗi kết nối");
             }
+            finally
+            {
+                conn.Close();
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

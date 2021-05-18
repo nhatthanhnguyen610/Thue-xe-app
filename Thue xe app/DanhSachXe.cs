@@ -14,9 +14,9 @@ using System.Data.Common;
 
 namespace Thue_xe_app
 {
-
     public partial class DanhSachXe : Form
     {
+        private string link = @"C:\Users\DELL\source\repos\Thue xe app";  // link đến thư mục Thue Xe app
         SqlConnection conn = new SqlConnection(getConnectString());
         List<DanhSachXeModel> danhSachXeModels = new List<DanhSachXeModel>();
         int soThuTu;
@@ -46,10 +46,10 @@ namespace Thue_xe_app
                         int maXe = Convert.ToInt32(reader.GetValue(0));
                         int bienSo = Convert.ToInt32(reader.GetValue(1));
                         string tenXe = reader.GetString(2);
-                        string imageUrl;
+                        string imageUrl ;
                         try
                         {
-                            imageUrl = reader.GetString(3);
+                            imageUrl = link + reader.GetString(3);
                         }
                         catch(Exception ex)
                         {

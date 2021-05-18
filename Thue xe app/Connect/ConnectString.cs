@@ -10,7 +10,7 @@ namespace Thue_xe_app.Connect
     {
         public static string getConnectString()
         {
-            return "Data Source=192.168.2.105,1433;Initial Catalog=ThueXe;User ID=sa;Password=123123;";
+            return "Data Source=thanhnn;Initial Catalog=ThueXe;User ID=sa;Password=123123;";
         }
     }
 }
