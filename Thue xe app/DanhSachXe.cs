@@ -71,7 +71,7 @@ namespace Thue_xe_app
             if (tongSoXe == 0)
             {
                 lbMaXe.Text = lbTenXe.Text = lbBienSo.Text = "";
-                picXe.Image = Image.FromFile(@"C:\Users\DELL\source\repos\Thue xe app\Thue xe app\img\null.jpg");
+                picXe.Image = Image.FromFile(link+@"\Thue xe app\img\null.jpg");
                 btnThueXe.Enabled = false;
             }
             else
