@@ -30,6 +30,7 @@ namespace Thue_xe_app
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnHuy = new System.Windows.Forms.Button();
             this.comboDv = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dateBD = new System.Windows.Forms.DateTimePicker();
@@ -57,6 +58,7 @@ namespace Thue_xe_app
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnHuy);
             this.groupBox1.Controls.Add(this.comboDv);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.dateBD);
@@ -85,6 +87,18 @@ namespace Thue_xe_app
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thuê xe";
             // 
+            // btnHuy
+            // 
+            this.btnHuy.BackColor = System.Drawing.Color.DarkRed;
+            this.btnHuy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnHuy.Location = new System.Drawing.Point(637, 317);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(131, 46);
+            this.btnHuy.TabIndex = 25;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
             // comboDv
             // 
             this.comboDv.FormattingEnabled = true;
@@ -94,7 +108,7 @@ namespace Thue_xe_app
             this.comboDv.Location = new System.Drawing.Point(172, 343);
             this.comboDv.Name = "comboDv";
             this.comboDv.Size = new System.Drawing.Size(256, 24);
-            this.comboDv.TabIndex = 24;
+            this.comboDv.TabIndex = 5;
             this.comboDv.SelectedIndexChanged += new System.EventHandler(this.comboDv_SelectedIndexChanged);
             // 
             // label9
@@ -193,7 +207,7 @@ namespace Thue_xe_app
             // btnXacNhan
             // 
             this.btnXacNhan.BackColor = System.Drawing.Color.Lime;
-            this.btnXacNhan.Location = new System.Drawing.Point(550, 316);
+            this.btnXacNhan.Location = new System.Drawing.Point(471, 317);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(135, 46);
             this.btnXacNhan.TabIndex = 8;
@@ -206,7 +220,7 @@ namespace Thue_xe_app
             this.txtDiaChi.Location = new System.Drawing.Point(172, 289);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(256, 22);
-            this.txtDiaChi.TabIndex = 7;
+            this.txtDiaChi.TabIndex = 4;
             // 
             // label5
             // 
@@ -222,7 +236,7 @@ namespace Thue_xe_app
             this.txtCmnd.Location = new System.Drawing.Point(172, 228);
             this.txtCmnd.Name = "txtCmnd";
             this.txtCmnd.Size = new System.Drawing.Size(256, 22);
-            this.txtCmnd.TabIndex = 5;
+            this.txtCmnd.TabIndex = 3;
             // 
             // label4
             // 
@@ -238,7 +252,7 @@ namespace Thue_xe_app
             this.txtSdt.Location = new System.Drawing.Point(172, 170);
             this.txtSdt.Name = "txtSdt";
             this.txtSdt.Size = new System.Drawing.Size(256, 22);
-            this.txtSdt.TabIndex = 3;
+            this.txtSdt.TabIndex = 2;
             // 
             // textbox12
             // 
@@ -322,5 +336,6 @@ namespace Thue_xe_app
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnHuy;
     }
 }

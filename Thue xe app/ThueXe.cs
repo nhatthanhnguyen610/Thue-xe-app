@@ -99,8 +99,8 @@ namespace Thue_xe_app
                 SqlCommand commandUpdate = conn.CreateCommand();
                 commandUpdate.CommandText = "update Xe SET [trangThai] = 1 where maXe = " + md.maXe;
                 commandUpdate.ExecuteNonQuery();
-                DanhSachXe danhSachXe = new DanhSachXe();
-                
+
+                DanhSachXe danhSachXe = new DanhSachXe();          
                 this.Hide();
                 danhSachXe.Show();
                 this.Close();
@@ -113,6 +113,14 @@ namespace Thue_xe_app
             {
                 conn.Close();
             }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            DanhSachXe danhSachXe = new DanhSachXe();
+            this.Hide();
+            danhSachXe.Show();
+            this.Close();
         }
     }
 }

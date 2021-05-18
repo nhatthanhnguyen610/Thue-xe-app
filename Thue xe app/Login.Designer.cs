@@ -68,7 +68,7 @@ namespace Thue_xe_app
             this.txtUser.Location = new System.Drawing.Point(192, 138);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(204, 27);
-            this.txtUser.TabIndex = 2;
+            this.txtUser.TabIndex = 1;
             // 
             // txtPass
             // 
@@ -77,7 +77,7 @@ namespace Thue_xe_app
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(204, 27);
-            this.txtPass.TabIndex = 4;
+            this.txtPass.TabIndex = 2;
             // 
             // label3
             // 
@@ -92,11 +92,12 @@ namespace Thue_xe_app
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(112, 306);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(180, 48);
-            this.btnLogin.TabIndex = 5;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -132,6 +133,7 @@ namespace Thue_xe_app
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Thue_xe_app.Properties.Resources.bg;
+            this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnThoat);
