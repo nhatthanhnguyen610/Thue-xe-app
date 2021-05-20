@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using static Thue_xe_app.Connect.ConnectString;
+using System.Data.Common;
+using Thue_xe_app.ExportDocument;
+
 namespace Thue_xe_app
 {
     public partial class Login : Form
@@ -28,17 +31,28 @@ namespace Thue_xe_app
                 string password = txtPass.Text;
                 string sql = "select * from NhanVien where userName='" + username + "' and passWord='" + password+"'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader dta = cmd.ExecuteReader();
-                if (dta.Read() == true)
+                using (DbDataReader reader = cmd.ExecuteReader())
                 {
-                    this.Hide();
-                    TrangChu trangChu = new TrangChu();
-                    trangChu.Show();
+                    if (reader.HasRows)
+                    {
+
+                        while (reader.Read())
+                        {
+
+                            Constants.username = reader.GetString(1);
+                            Constants.isAdmin = Convert.ToBoolean(reader.GetValue(3));
+                        }
+                        this.Hide();
+                        TrangChu trangChu = new TrangChu();
+                        trangChu.Show();
+                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
-                }    
+                 
             }
             catch (Exception ex)
             {

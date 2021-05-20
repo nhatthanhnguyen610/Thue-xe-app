@@ -59,6 +59,7 @@
     <Compile Include="DanhSachXe.Designer.cs">
       <DependentUpon>DanhSachXe.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExportDocument\Constants.cs" />
     <Compile Include="HoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,5 +172,6 @@
     <None Include="img\menu1.png" />
     <None Include="img\bg.gif" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Thue_xe_app.ExportDocument;
 
 namespace Thue_xe_app
 {
@@ -48,16 +49,30 @@ namespace Thue_xe_app
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ThanhToan thanhToan = new ThanhToan();
-            thanhToan.Show();
+            if (Constants.isAdmin)
+            {
+                this.Hide();
+                ThanhToan thanhToan = new ThanhToan();
+                thanhToan.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có khả năng truy cập", "Cảnh báo", MessageBoxButtons.OK);
+            }
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ThongKe thongKe = new ThongKe();
-            thongKe.Show();
+            if (Constants.isAdmin)
+            {
+                this.Hide();
+                ThongKe thongKe = new ThongKe();
+                thongKe.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có khả năng truy cập", "Cảnh báo", MessageBoxButtons.OK);
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -73,5 +88,9 @@ namespace Thue_xe_app
             }
         }
 
+        private void TrangChu_Load(object sender, EventArgs e)
+        {
+            lbXinChao.Text = "Xin chào " + Constants.username;
+        }
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Thue_xe_app.ExportDocument;
 using static Thue_xe_app.Connect.ConnectString;
 
 namespace Thue_xe_app
@@ -91,19 +92,33 @@ namespace Thue_xe_app
 
         private void bt_Xoa_Click(object sender, EventArgs e)
         {
-            command = connection.CreateCommand();
-            command.CommandText = "Update KhachHang set trangThai= '" + 1 + "' where maKh='" + idNguoiThue + "'";
-            command.ExecuteNonQuery();
-            loadData();
+            if (Constants.isAdmin)
+            {
+                command = connection.CreateCommand();
+                command.CommandText = "Update KhachHang set trangThai= '" + 1 + "' where maKh='" + idNguoiThue + "'";
+                command.ExecuteNonQuery();
+                loadData();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có khả năng truy cập", "Cảnh báo", MessageBoxButtons.OK);
+            }
         }
 
         private void bt_Sua_Click(object sender, EventArgs e)
         {
-            command = connection.CreateCommand();
-            int sdt = int.Parse(txt_SDT.Text);
-            command.CommandText = "update KhachHang set tenKh='" + txt_TenNguoiThue.Text + "', cmnd='" + txt_CMND.Text + "', diaChi='" + txt_DiaChi.Text + "', sdt='" + sdt + "' where maKh='" + idNguoiThue + "'";
-            command.ExecuteNonQuery();
-            loadData();
+            if (Constants.isAdmin)
+            {
+                command = connection.CreateCommand();
+                int sdt = int.Parse(txt_SDT.Text);
+                command.CommandText = "update KhachHang set tenKh='" + txt_TenNguoiThue.Text + "', cmnd='" + txt_CMND.Text + "', diaChi='" + txt_DiaChi.Text + "', sdt='" + sdt + "' where maKh='" + idNguoiThue + "'";
+                command.ExecuteNonQuery();
+                loadData();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có khả năng truy cập", "Cảnh báo", MessageBoxButtons.OK);
+            }
         }
     }
 }

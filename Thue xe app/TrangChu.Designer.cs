@@ -43,6 +43,7 @@ namespace Thue_xe_app
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lbXinChao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -58,7 +59,7 @@ namespace Thue_xe_app
             this.btnDangxuat.BackColor = System.Drawing.Color.DimGray;
             this.btnDangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangxuat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDangxuat.Location = new System.Drawing.Point(677, 12);
+            this.btnDangxuat.Location = new System.Drawing.Point(677, 42);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Size = new System.Drawing.Size(111, 41);
             this.btnDangxuat.TabIndex = 0;
@@ -202,12 +203,24 @@ namespace Thue_xe_app
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
+            // lbXinChao
+            // 
+            this.lbXinChao.AutoSize = true;
+            this.lbXinChao.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lbXinChao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbXinChao.Location = new System.Drawing.Point(604, 9);
+            this.lbXinChao.Name = "lbXinChao";
+            this.lbXinChao.Size = new System.Drawing.Size(82, 20);
+            this.lbXinChao.TabIndex = 11;
+            this.lbXinChao.Text = "Xin chào";
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Thue_xe_app.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbXinChao);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -218,6 +231,7 @@ namespace Thue_xe_app
             this.Name = "TrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChu";
+            this.Load += new System.EventHandler(this.TrangChu_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -227,6 +241,7 @@ namespace Thue_xe_app
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -246,5 +261,6 @@ namespace Thue_xe_app
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label lbXinChao;
     }
 }
